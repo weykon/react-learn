@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Comment } from './component/Comment'
+import {Clock} from "./component/Clock"
 function Hello(props: any) {
     return (
         // <h1>Hello</h1>
@@ -24,6 +25,7 @@ function App() {
             <Hello name='abc'></Hello>
             <Hello name='weykon'></Hello>
             <Comment date={comment.date} text={comment.text} author={comment.author} ></Comment>
+            <Clock ></Clock>
         </div >
     )
 }
