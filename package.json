@@ -1,0 +1,36 @@
+{
+  "name": "react_Studying",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/react-dom": "^17.0.13",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.180",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.40",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/webpack": "^5.28.0",
+    "react-router-dom": "^6.2.2",
+    "ts-loader": "^9.2.8",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/weykon/react_-studying.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
