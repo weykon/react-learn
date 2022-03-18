@@ -8,8 +8,18 @@ function Hello(props: any) {
     )
 }
 
+function App() {
+    return (
+        <div>
+            <Hello name='wykon'></Hello>
+            <Hello name='abc'></Hello>
+            <Hello name='weykon'></Hello>
+        </div>
+    )
+}
+
 ReactDOM.render(
-    <Hello name='wykon'/>,
+    <App />,
     document.getElementById("app")
 )
 
