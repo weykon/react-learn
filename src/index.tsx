@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { Comment } from './component/Comment'
 function Hello(props: any) {
     return (
         // <h1>Hello</h1>
@@ -8,15 +8,27 @@ function Hello(props: any) {
     )
 }
 
+const comment = {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!',
+    author: {
+        name: 'Hello Kitty',
+        avatarUrl: 'https://placekitten.com/g/64/64',
+    },
+};
+
 function App() {
     return (
         <div>
             <Hello name='wykon'></Hello>
             <Hello name='abc'></Hello>
             <Hello name='weykon'></Hello>
-        </div>
+            <Comment date={comment.date} text={comment.text} author={comment.author} ></Comment>
+        </div >
     )
 }
+
+
 
 ReactDOM.render(
     <App />,
