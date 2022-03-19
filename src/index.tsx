@@ -1,22 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Comment } from './component/Comment'
-import {Clock} from "./component/Clock"
+import { Comment, mock_comment } from './component/Comment'
+import { Clock } from "./component/Clock"
+import Toggle from "./component/Toggle"
 function Hello(props: any) {
     return (
-        // <h1>Hello</h1>
-        <h1>Hello,{props.name}</h1>
+        <div>
+            <h1>Hello</h1>
+            <h1>    {props.name}</h1>
+        </div>
+
     )
 }
-
-const comment = {
-    date: new Date(),
-    text: 'I hope you enjoy learning React!',
-    author: {
-        name: 'Hello Kitty',
-        avatarUrl: 'https://placekitten.com/g/64/64',
-    },
-};
 
 function App() {
     return (
@@ -24,13 +19,12 @@ function App() {
             <Hello name='wykon'></Hello>
             <Hello name='abc'></Hello>
             <Hello name='weykon'></Hello>
-            <Comment date={comment.date} text={comment.text} author={comment.author} ></Comment>
-            <Clock ></Clock>
+            <Comment date={mock_comment.date} text={mock_comment.text} author={mock_comment.author} ></Comment>
+            <Clock date={new Date()}></Clock>
+            <Toggle/>
         </div >
     )
 }
-
-
 
 ReactDOM.render(
     <App />,

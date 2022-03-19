@@ -1,5 +1,15 @@
 import React from "react";
 
+
+export const mock_comment = {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!',
+    author: {
+        name: 'Hello Kitty',
+        avatarUrl: 'https://placekitten.com/g/64/64',
+    },
+};
+
 export function Comment(props: any) {
     return (
         <div className="Comment" >
