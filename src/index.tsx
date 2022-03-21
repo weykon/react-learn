@@ -28,7 +28,7 @@ function App() {
             <Clock date={new Date()}></Clock>
             <Toggle />
             <LoginCtrl isLoggedIn={false} />
-            <NumberList numbers={[1,2,3,4,5]}/>
+            <NumberList numbers={[1,2,3]} />
         </div>
     );
 }

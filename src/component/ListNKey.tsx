@@ -7,11 +7,11 @@ function ListItem(props: ListItem) {
 
 type P = { numbers: number[] };
 export function NumberList(props: P) {
+    console.log("in ", props);
     const numbers = props.numbers;
-    const listItems = numbers.map((number) => {
-        <ListItem key={number.toString()} value={number} />;
+    const listItems = numbers.map((number, i) => {
+        return <ListItem key={number + ""} value={number} />;
     });
-    return (
-        <ul>{listItems}</ul>
-    )
+    console.log(listItems);
+    return <ul>{listItems}</ul>;
 }
