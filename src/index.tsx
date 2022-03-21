@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import { Comment, mock_comment } from "./component/Comment";
 import { Clock } from "./component/Clock";
 import Toggle from "./component/Toggle";
-import { Greeting } from "./component/Greeting";
 import { LoginCtrl } from "./component/LoginCtrl";
+import { NumberList } from "./component/ListNKey";
 function Hello(props: any) {
     return (
         <div>
@@ -28,6 +28,7 @@ function App() {
             <Clock date={new Date()}></Clock>
             <Toggle />
             <LoginCtrl isLoggedIn={false} />
+            <NumberList numbers={[1,2,3,4,5]}/>
         </div>
     );
 }

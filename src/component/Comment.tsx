@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export const mock_comment = {
     date: new Date(),
     text: 'I hope you enjoy learning React!',
