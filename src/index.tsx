@@ -5,6 +5,7 @@ import { Clock } from "./component/Clock";
 import Toggle from "./component/Toggle";
 import { LoginCtrl } from "./component/LoginCtrl";
 import { NumberList } from "./component/ListNKey";
+import { Calculator } from "./component/BoilingVerdict";
 function Hello(props: any) {
     return (
         <div>
@@ -17,9 +18,9 @@ function Hello(props: any) {
 function App() {
     return (
         <div>
-            <Hello name="wykon"></Hello>
+            {/* <Hello name="wykon"></Hello>
             <Hello name="abc"></Hello>
-            <Hello name="weykon"></Hello>
+            <Hello name="weykon"></Hello> */}
             <Comment
                 date={mock_comment.date}
                 text={mock_comment.text}
@@ -28,7 +29,8 @@ function App() {
             <Clock date={new Date()}></Clock>
             <Toggle />
             <LoginCtrl isLoggedIn={false} />
-            <NumberList numbers={[1,2,3]} />
+            <NumberList numbers={[1, 2, 3]} />
+            <Calculator />
         </div>
     );
 }

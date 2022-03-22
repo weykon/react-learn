@@ -20,7 +20,7 @@ export class Clock extends React.Component<P, P> {
     render() {
         return (
             <div>
-                <h1>时钟显示,</h1>
+                <h4>时钟显示,</h4>
                 <h2>It's {this.state.date.toLocaleTimeString()}</h2>
             </div>
         )
