@@ -33,3 +33,6 @@ export class Calculator extends React.Component<{}, S> {
         );
     }
 }
+
+
+class Temperature
