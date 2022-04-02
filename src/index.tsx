@@ -6,6 +6,8 @@ import Toggle from "./component/Toggle";
 import { LoginCtrl } from "./component/LoginCtrl";
 import { NumberList } from "./component/ListNKey";
 import { Calculator } from "./component/BoilingVerdict";
+import {UseStateExample} from './component/UseState'
+import {UseEffectExample} from './component/UseEffect'
 function Hello(props: any) {
     return (
         <div>
@@ -31,6 +33,8 @@ function App() {
             <LoginCtrl isLoggedIn={false} />
             <NumberList numbers={[1, 2, 3]} />
             <Calculator />
+            <UseStateExample/>
+            <UseEffectExample/>
         </div>
     );
 }
