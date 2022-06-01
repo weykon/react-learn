@@ -43,13 +43,15 @@ function App() {
                     <div style={{ width: '50px', height: '350px', backgroundColor: 'crimson' }}></div>
                     <div style={{ width: '50px', height: '50px', backgroundColor: 'honeydew' }}></div>
                 </div>
-                <div style={{ width: '200px', height: '300px', backgroundColor: 'dimgrey', flexDirection: 'row', flexFlow: 'row wrap', display: 'flex', alignContent: 'flex-start'}}>
+                <div style={{ width: '200px', height: '300px', backgroundColor: 'dimgrey', flexDirection: 'row', flexFlow: 'row wrap', display: 'flex', alignContent: 'flex-start' }}>
                     <div style={{ width: '50px', height: '150px', backgroundColor: 'cornflowerblue' }}></div>
                     <div style={{ width: '50px', height: '30px', backgroundColor: 'crimson' }}></div>
                     <div style={{ width: '50px', height: '50px', backgroundColor: 'honeydew' }}></div>
                 </div>
-                <div style={{ width: '200px', height: '300px', backgroundColor: 'cornsilk' }}>
-
+                <div style={{ width: '200px', height: '300px', backgroundColor: 'cornsilk', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ width: '50px', height: '150px', backgroundColor: 'cornflowerblue' }}></div>
+                    <div style={{ width: '50px', height: '30px', backgroundColor: 'crimson' }}></div>
+                    <div style={{ width: '50px', height: '50px', backgroundColor: 'honeydew' }}></div>
                 </div>
             </div>
         </div>
