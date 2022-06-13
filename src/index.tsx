@@ -8,6 +8,7 @@ import { NumberList } from "./component/ListNKey";
 import { Calculator } from "./component/BoilingVerdict";
 import { UseStateExample } from './component/UseState'
 import { UseEffectExample } from './component/UseEffect'
+import { UseStopwatchForExample } from "./component/useReducer";
 function Hello(props: any) {
     return (
         <div>
@@ -35,6 +36,7 @@ function App() {
                 <Calculator />
                 <UseStateExample />
                 <UseEffectExample />
+                <UseStopwatchForExample />
             </div>
             <h1 style={{ backgroundColor: '#F4DCE6' }}>css 练习 flex</h1>
             <div style={{ display: "flex", backgroundColor: '#F4DCE6', flexDirection: 'row', flexWrap: 'wrap' }}>
