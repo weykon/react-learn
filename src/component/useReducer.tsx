@@ -71,15 +71,12 @@ export function UseMyExample0() {
     return (
         <div>
             <button onClick={() => justHappen({ doing: 'just_sit' })}>sit</button>
-
             {thisIsComplexState.doing ?
                 <div>doing</div> : null
             }
         </div>
     )
 }
-
-
 
 export function UseMyExample1() {
     const [complexState, dispatch] = useReducer((complexState: any, action: any) => {
