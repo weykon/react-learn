@@ -61,12 +61,17 @@ export function UseStopwatchForExample() {
 
 
 export function UseMyExample0() {
-    const [thisIsComplexState, justHappen] = useReducer((eachSmallStateOrSome: any, whatWillbeHappen: { doing: any; }) => {
-        switch (whatWillbeHappen.doing) {
-            case 'just_sit': return { ...eachSmallStateOrSome, where: 'Shop' }
-            case 'just_sleep': return { where: 'Home' }
-        }
-    }, { where: 'moon' })
+    const [thisIsComplexState, justHappen] =
+        useReducer((
+            eachSmallStateOrSome: any,
+            whatWillbeHappen: { doing: any; }) => {
+            switch (whatWillbeHappen.doing) {
+                case 'just_sit': return { ...eachSmallStateOrSome, where: 'Shop' }
+                case 'just_sleep': return { where: 'Home' }
+            }
+        }, {
+            where: 'moon'
+        })
 
     return (
         <div>
@@ -79,12 +84,15 @@ export function UseMyExample0() {
 }
 
 export function UseMyExample1() {
-    const [complexState, dispatch] = useReducer((complexState: any, action: any) => {
-        switch (action) {
-            case 'changeName': return { ...complexState, name: 'AJ' };
-            case 'sleep': return { name: 'LS', sleep: 'good' };
-        }
-    }, { name: 'Jarde' });
+    const [complexState, dispatch] =
+        useReducer((complexState: any, action: any) => {
+            switch (action) {
+                case 'changeName': return { ...complexState, name: 'AJ' };
+                case 'sleep': return { name: 'LS', sleep: 'good' };
+            }
+        }, {
+            name: 'Jarde'
+        });
 
     return (
         <div>
@@ -93,3 +101,24 @@ export function UseMyExample1() {
         </div>
     )
 }
+
+// 买新车和买新房
+type Situations = { happy: number, cost: number }
+export function ComplexSituation() {
+    const [situations, decision] = useReducer<(situations: Situations, actionCode: 'carcar' | 'househouse') => Situations>(
+        (situations: Situations, actionCode: 'carcar' | 'househouse') => {
+            switch (actionCode) {
+                case 'carcar': return { happy: 30, cost: 30 }
+                case 'househouse': return { happy: 13, cost: 300 }
+                default: return { ...situations }
+            }
+        }, { happy: 0, cost: 0 }
+    )
+    return (
+        <div>
+            {situations.happy === 1 && <div>nonono</div>}
+            <button onClick={() => decision('carcar')}>buy car</button>
+        </div>
+    )
+}
+
