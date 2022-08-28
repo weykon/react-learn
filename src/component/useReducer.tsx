@@ -122,3 +122,24 @@ export function ComplexSituation() {
     )
 }
 
+export function sendMultiParamsByObjectToAction() {
+    const reducer = (situations: { coffeeDay: 'StarBucker' | 'any', coffee: 'Moca' | 'any' }, actionCode: {
+        coffeeDay: 'StarBucker' | 'any', coffee: 'Moca' | 'any'
+    }) => {
+        return actionCode
+    }
+
+    const [whatIsTodayFromCoffee, gogogo] = useReducer(reducer, {
+        coffeeDay: 'StarBucker', coffee: 'Moca'
+    })
+
+    return (
+        <div>
+            {'test' ?
+                gogogo({ coffeeDay: 'StarBucker', coffee: 'any' }) + ''
+                : gogogo({ coffeeDay: 'any', coffee: 'Moca' }) + ''
+            }
+        </div>
+    )
+}
+
