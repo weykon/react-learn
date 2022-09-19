@@ -77,7 +77,6 @@ function ModalProvider({ children }: { children: JSX.Element }) {
             </ModalPropsContext.Provider>
         </ModalCompContext.Provider>
     )
-
 }
 
 function ModalPage() {
