@@ -9,6 +9,10 @@ import { Calculator } from "./component/BoilingVerdict";
 import { UseStateExample } from './component/UseState'
 import { UseEffectExample } from './component/UseEffect'
 import { UseStopwatchForExample } from "./component/useReducer";
+import { UseForwardRefForMain } from "./component/forwardRef";
+import SendCompAsRefForMain from "./component/sendCompAsRef";
+import UseRefForMain from "./component/useRef";
+import ForModalGlobalForMain from "./component/ForModalGlobal";
 function Hello(props: any) {
     return (
         <div>
@@ -37,24 +41,10 @@ function App() {
                 <UseStateExample />
                 <UseEffectExample />
                 <UseStopwatchForExample />
-            </div>
-            <h1 style={{ backgroundColor: '#F4DCE6' }}>css 练习 flex</h1>
-            <div style={{ display: "flex", backgroundColor: '#F4DCE6', flexDirection: 'row', flexWrap: 'wrap' }}>
-                <div style={{ display: "flex", width: '200px', height: '300px', flexFlow: 'row wrap', backgroundColor: 'skyblue', alignItems: 'flex-start' }}>
-                    <div style={{ width: '50px', height: '150px', backgroundColor: 'cornflowerblue' }}></div>
-                    <div style={{ width: '50px', height: '350px', backgroundColor: 'crimson' }}></div>
-                    <div style={{ width: '50px', height: '50px', backgroundColor: 'honeydew' }}></div>
-                </div>
-                <div style={{ width: '200px', height: '300px', backgroundColor: 'dimgrey', flexDirection: 'row', flexFlow: 'row wrap', display: 'flex', alignContent: 'flex-start' }}>
-                    <div style={{ width: '50px', height: '150px', backgroundColor: 'cornflowerblue' }}></div>
-                    <div style={{ width: '50px', height: '30px', backgroundColor: 'crimson' }}></div>
-                    <div style={{ width: '50px', height: '50px', backgroundColor: 'honeydew' }}></div>
-                </div>
-                <div style={{ width: '200px', height: '300px', backgroundColor: 'cornsilk', display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ width: '50px', height: '150px', backgroundColor: 'cornflowerblue' }}></div>
-                    <div style={{ width: '50px', height: '30px', backgroundColor: 'crimson' }}></div>
-                    <div style={{ width: '50px', height: '50px', backgroundColor: 'honeydew' }}></div>
-                </div>
+                <SendCompAsRefForMain />
+                <UseRefForMain />
+                <UseForwardRefForMain />
+                <ForModalGlobalForMain/>
             </div>
         </div>
     );
