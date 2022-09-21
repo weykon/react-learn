@@ -17,8 +17,10 @@ function useAnyHook() {
 function ForMainFromCtrlChildren() {
     return (
         <AComponentTypeToContainer >
-            {([anyState, anySet]) => {
-                return <div></div>
+            {([anyState, anySet]: [anyState: any, anySet: any]) => {
+                return (<div>
+
+                </div>)
             }}
         </AComponentTypeToContainer >
     )

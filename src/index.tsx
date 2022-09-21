@@ -13,6 +13,8 @@ import { UseForwardRefForMain } from "./component/forwardRef";
 import SendCompAsRefForMain from "./component/sendCompAsRef";
 import UseRefForMain from "./component/useRef";
 import ForModalGlobalForMain from "./component/ForModalGlobal";
+import AppReactTracked from "./component/ReactTracked/app";
+import { RefOnCompUsageForMain } from "./component/refForAComp.tsx/refOnCompUsage";
 function Hello(props: any) {
     return (
         <div>
@@ -25,10 +27,10 @@ function Hello(props: any) {
 function App() {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', background: '#D6E8F7ed', width: '100%', flex: 1 }}>
-            <h1>This is base</h1>
+            <h6>This is base</h6>
 
             <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-                <Comment
+                {/* <Comment
                     date={mock_comment.date}
                     text={mock_comment.text}
                     author={mock_comment.author}
@@ -45,6 +47,8 @@ function App() {
                 <UseRefForMain />
                 <UseForwardRefForMain />
                 <ForModalGlobalForMain/>
+                <AppReactTracked /> */}
+                <RefOnCompUsageForMain />
             </div>
         </div>
     );
