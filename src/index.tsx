@@ -47,8 +47,9 @@ function App() {
                 <UseRefForMain />
                 <UseForwardRefForMain />
                 <ForModalGlobalForMain/>
-                <AppReactTracked /> */}
-                <RefOnCompUsageForMain />
+                }
+                {/* <RefOnCompUsageForMain /> */}
+                <AppReactTracked />
             </div>
         </div>
     );
