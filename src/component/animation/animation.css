@@ -1,0 +1,58 @@
+.show {
+    opacity: 1;
+    animation: show-item 2s ease-in forwards;
+}
+
+.hide {
+    animation: hide-item 2s ease-in forwards;
+}
+
+/* 动画结束之后，保存动画最后一帧的样式 */
+@keyframes show-item {
+    0% {
+        opacity: 0;
+        color: red;
+    }
+
+    50% {
+        opacity: 0.5;
+        color: green;
+    }
+
+    100% {
+        opacity: 1;
+        color: blue;
+    }
+}
+
+@keyframes hide-item {
+    0% {
+        opacity: 1;
+        color: red;
+    }
+
+    50% {
+        opacity: 0.5;
+        color: green;
+    }
+
+    100% {
+        opacity: 0;
+        color: blue;
+    }
+}
+
+.div-shrink {
+    width: 150px;
+}
+
+.div-open {
+    width: 240px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dddddd;
+    outline: none;
+    transition: width .35s linear;
+}
