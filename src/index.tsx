@@ -16,6 +16,7 @@ import ForModalGlobalForMain from "./component/ForModalGlobal";
 import AppReactTracked from "./component/ReactTracked/app";
 import { RefOnCompUsageForMain } from "./component/refForAComp.tsx/refOnCompUsage";
 import AnimationForMain from "./component/animation/animation";
+import { myTimer, TimerView } from "./mobx/first";
 function Hello(props: any) {
     return (
         <div>
@@ -51,7 +52,8 @@ function App() {
                 }
                 {/* <RefOnCompUsageForMain /> */}
                 {/* <AppReactTracked /> */}
-                <AnimationForMain />
+                {/* <AnimationForMain /> */}
+                <TimerView timer={myTimer}/>
             </div>
         </div>
     );
