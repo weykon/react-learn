@@ -18,6 +18,7 @@ import { RefOnCompUsageForMain } from "./component/refForAComp.tsx/refOnCompUsag
 import AnimationForMain from "./component/animation/animation";
 import { myTimer, TimerView } from "./mobx/first";
 import UseLayoutEffectExample from "./component/UseLayoutEffectAndOther";
+import CheckAppendListRerender from "./component/TEST_AppendListRerender";
 function Hello(props: any) {
     return (
         <div>
@@ -55,7 +56,8 @@ function App() {
                 {/* <AppReactTracked /> */}
                 {/* <AnimationForMain /> */}
                 {/* <TimerView timer={myTimer}/> */}
-                <UseLayoutEffectExample />
+                {/* <UseLayoutEffectExample /> */}
+                <CheckAppendListRerender/>
             </div>
         </div>
     );
