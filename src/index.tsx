@@ -19,6 +19,7 @@ import AnimationForMain from "./component/animation/animation";
 import { myTimer, TimerView } from "./mobx/first";
 import UseLayoutEffectExample from "./component/UseLayoutEffectAndOther";
 import CheckAppendListRerender from "./component/TEST_AppendListRerender";
+import AppWithRefToFunction from "./refExposeMethod/calendar";
 function Hello(props: any) {
     return (
         <div>
@@ -57,7 +58,8 @@ function App() {
                 {/* <AnimationForMain /> */}
                 {/* <TimerView timer={myTimer}/> */}
                 {/* <UseLayoutEffectExample /> */}
-                <CheckAppendListRerender/>
+                {/* <CheckAppendListRerender/> */}
+                <AppWithRefToFunction/>
             </div>
         </div>
     );
